@@ -1,0 +1,12 @@
+version: '3'
+services:
+    gomart_app:
+        image: gomart
+        environment:
+            - DB_HOST=localhost
+            - DB_PORT=5432
+            - DB_USER=lithin
+            - DB_PASSWORD=lithin123
+        ports:
+            - "8069:8069"
+ 
