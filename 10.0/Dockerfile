@@ -1,6 +1,7 @@
 FROM odoo:10.0
-MAINTAINER Bista DMCC <info@bistasolutions.com>
+MAINTAINER Lithin <lithint.mail@gmail.com>
 USER root
+#Inherted the exisitng Official Docker Image
 # Mount /var/lib/odoo to allow restoring filestore and /opt/custom_addons for users addons
 RUN mkdir -p /opt/custom_addons \
         && chown -R odoo /opt/custom_addons
